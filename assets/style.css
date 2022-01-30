@@ -1,0 +1,125 @@
+#header{
+    text-align: center;
+    font-size: x-large;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+#instructions{
+    border:olivedrab;
+    border-style: dotted;
+    border-width: 5px;
+    text-align:center;
+    font-size: 24px;
+    width: 470px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2px;
+}
+
+#instructions p{
+   margin-top: -20px;
+}
+
+#instructions h3{
+    margin-top: 5px;
+}
+
+#timeButtContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#timerContainer{
+    border:black;
+    border-style: dotted;
+    border-width: 5px;
+    text-align: center;
+    width: 230px;
+    height: 130px;
+    margin-top: 15px;
+    background-color: olivedrab;
+}
+
+#timer{
+   font-size: 24px;
+}
+
+#start{
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    border:black;
+    border-style: solid;
+    background-color: white;
+    font-size: x-large;
+    color: olivedrab;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+#scorecard{
+    color: white;
+    border:olivedrab;
+    border-style: dotted;
+    border-width: 5px;
+    text-align: center;
+    width: 230px;
+    height: 130px;
+    margin-top: 15px;
+    background-color: black;
+}
+
+#questionsContainer{
+    font-size: 25px;
+    border: olivedrab;
+    border-width: 4px;
+    border-style: dotted;
+    margin-top: 14px;
+    padding: 12px;
+    text-align: center;
+}
+
+#question{
+    text-decoration: underline;
+    margin-top: 3px;
+}
+
+#answers{
+    display: inline-block;
+    padding: 8px;
+    
+}
+
+.answer:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 18px olivedrab;
+}
+
+.answer{
+    background-color: black;
+    color: white;
+    height: 44px;
+    width: 185px;
+    margin: 5px;
+    
+}
+
+/* .answer{
+    display: none;
+} */
+
+
+
+
+    
+
+
+
+
+
+
+
