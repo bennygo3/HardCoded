@@ -1,0 +1,21 @@
+*{background-color: black;}
+
+
+#highScoreContainer h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline dotted olivedrab;
+}
+
+#rank{
+    color: white;
+    margin-left: 25px;
+    
+    
+    font-size: 28px;
+}
+
+#rank li{
+    padding: 5px;
+    text-decoration: underline dotted olivedrab;
+}

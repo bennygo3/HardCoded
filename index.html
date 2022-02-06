@@ -16,9 +16,9 @@
 
   <div id="instructions">
     <h3>Instructions:</h3>
-    <p> There will be a series of FIVE questions. <br>
+    <p> There will be a series of FOUR questions. <br>
       You will have 30 seconds to answer all of the questions. <br>
-      Incorrect guesses will lead to the deduction of alotted time. <br>
+      Each incorrect guess will result in 2 seconds deducted from your remaining time. <br>
       At the end of the quiz your score and initials can be recorded so that you can share with your friends!<br>
     </p>
   </div>
@@ -34,24 +34,38 @@
       <button id="start">Push to play!</button>
     </div>
 
-    <div id="scorecard">
+    <div id="scorecardContainer">
       <h2>Score:</h2>
+      <p id="scorecard"></p>
     </div>
-  
+
   </div>
 
 
   <div id="questionsContainer" class="hide">
     <div id="question"></div>
     <div id="answers">
-      <button class="answer" id="A" ></button>
-      <button class="answer" id="B" ></button>
-      <button class="answer" id="C" ></button>
-      <button class="answer" id="D" ></button>
+      <button class="answer" id="A"></button>
+      <button class="answer" id="B"></button>
+      <button class="answer" id="C"></button>
+      <button class="answer" id="D"></button>
     </div>
   </div>
 
-
+  <div id="highScoreContainer" class="hide">
+    <h1>High Scores:</h1>
+    <h4>(If you would like to save your score, add your initials)</h4>
+    <input type="text" placeholder="Enter initials" id="initials" />
+    <a href="./highscore.html" target="_blank">
+      <input type="button" value="Submit" onclick="send()" id="submit" />
+    </a>
+    <p id="highScore"></p>
+    
+    <div id="restartButton">
+      <button id="playAgain">Push to play again!</button>
+    </div>
+    
+  </div>
 
 
   <script src="./assets/index.js"></script>

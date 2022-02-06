@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/hspage.css">
+    <title>High Scores Page</title>
+</head>
+
+<body>
+
+    <div id="highScoreContainer">
+        <h1>High Scores:</h1>
+        <ol id="rank">
+
+        </ol>
+    </div>
+
+    <script>
+        function showHighscores() {
+            var scoresToShow = JSON.parse(localStorage.getItem("scoresInitials")) || []
+            document.getElementById("rank").innerHTML = ""
+            if (scoresToShow.length == 0) {
+                var noScoresEl = document.createElement("li");
+                noScoresEl.textContent = "No Scores Available Yet"
+                document.getElementById("rank").appendChild(noScoresEl);
+                return
+            }
+
+            for (i = 0; i < scoresToShow.length; i++) {
+                var newLi = document.createElement("li");
+
+
+                newLi.textContent = scoresToShow[i]
+                document.getElementById("rank").appendChild(newLi);
+            }
+
+        }
+
+        showHighscores()
+    </script>
+
+</body>
+
+</html>
